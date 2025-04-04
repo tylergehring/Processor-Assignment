@@ -19,7 +19,7 @@ int LOG(char code[], char note[]){
         perror("Error opening file"); 
         return -1; // Return an error code 
     } 
-    fprintf(file, "%s | %s\n\r", code, note);
+    fprintf(file, "%s | %s\n", code, note);
     fclose(file);
     return 0;
 }
