@@ -32,7 +32,7 @@ int LOG(char code[], char note[]){
 }
 
 struct Process** create_process(char filename[]){
-    /**/
+    /*creates an array that points to process structs. populates those structs by reading in data*/
     char buffer[200];
     char **tokens;
     struct Process** processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_LINES);
@@ -60,6 +60,7 @@ struct Process** create_process(char filename[]){
         process->instructions = to_number(tokens[2]);
         processes[num_lines] = process;
         num_lines++;
+        LOG("Info", "Created Process");
     }
     fclose(fp);
     return processes;   
@@ -81,7 +82,7 @@ char** tokenize(char line[]){
     char buf[10];
 
     for(int i = 0; i<(get_len(line)+1); i++){
-        if((line[i] != ' ') && (line[i] != '\0')){
+        if(is_digit(line[i])){
             buf[buf_idx] = line[i];
             buf_idx++;
         }
@@ -108,10 +109,10 @@ char** tokenize(char line[]){
     return tokens;
 }
 
-int get_len(char arr[]){
+int get_len(char* arr){
     /*looks for Nul char and returns len when found*/
     int count = 0;
-    while(arr[count]!='\0'){
+    while((arr[count]!= '\0')){
         count++;
     }
 
@@ -126,14 +127,16 @@ void copy_str(char* destination, char* source){
 }
 
 
-int to_number(const char *str) {
+int to_number(char *str) {
+    /*turns string of ints into an int*/
     int result = 0;
-
-    // Loop through each character
-    while (*str) {
-        result = result * 10 + (*str - '0');
-        str++;
+    for (int i=0; i< get_len(str); i++){
+        result = result *10 + (str[i] - '0');
     }
-
     return result;
+}
+
+
+int is_digit(char ch) {
+    return (ch >= '0' && ch <= '9');
 }

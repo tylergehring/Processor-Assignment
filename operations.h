@@ -14,4 +14,6 @@ struct Process** create_process(char filename[]);
 char** tokenize(char line[]);
 int get_len(char arr[]);
 void copy_str(char* destination, char *source);
-int to_number(const char *str);
+int to_number(char *str);
+int is_digit(char ch);
+
