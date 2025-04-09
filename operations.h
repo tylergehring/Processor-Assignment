@@ -13,7 +13,7 @@ struct Process {
 
 int initialize_log();
 int LOG(char code[], char note[]);
-struct Process** create_process(char filename[]);
+void create_process(struct Process** processes, char filename[]);
 char** tokenize(char line[]);
 int get_len(char arr[]);
 void copy_str(char* destination, char *source);

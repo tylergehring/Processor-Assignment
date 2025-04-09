@@ -29,15 +29,11 @@ int LOG(char code[], char note[]){
     return 0;
 }
 
-struct Process** create_process(char filename[]){
+void create_process(struct Process** processes, char filename[]){
     /*creates an array that points to process structs. populates those structs by reading in data*/
     char buffer[200];
     char **tokens;
-    struct Process** processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_PROCESSES);
-    if(processes == NULL){
-        LOG("ERROR", "Could not allocate memory for struct Processes");
-        exit(1);
-    }
+    
 
     FILE *fp = fopen(filename, "r");
     if (fp == NULL){
@@ -60,8 +56,7 @@ struct Process** create_process(char filename[]){
         num_lines++;
         LOG("Info", "Created Process");
     }
-    fclose(fp);
-    return processes;   
+    fclose(fp);   
 }
 
 char** tokenize(char line[]){

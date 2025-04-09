@@ -1,44 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h> //for sleep()
 
 #include "operations.h"
 #include "process_control.h"
 
 
 int main(){
+    // --- Initializing Logs ---
     initialize_log();
     LOG("Info", "Log Initialized");
     
-    struct Process** inactive_processes = create_process("test3.txt");
+    // --- Initializing Queues ---
+    struct Process** inactive_processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_PROCESSES);
     struct Process** active_processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_PROCESSES);
+    set_null(inactive_processes);
     set_null(active_processes);
+    if((inactive_processes == NULL) || (active_processes == NULL)){
+        LOG("ERROR", "Could not allocate memory for struct Processes");
+        printf("<ERROR IN QUEUE MEM ALLOCATION>\n");
+        exit(1);
+    }
+    create_process(inactive_processes, "test3.txt");
     LOG("Info", "Queues Initialized");
     
-
-    //print_queues(inactive_processes, active_processes);
-    int success = 0;
-    LOG("Info", "Moving Processes to active");
-    success = move(inactive_processes, active_processes);
-    move(inactive_processes, active_processes);
+    printf("################### Initial #########################\n");
     print_queues(inactive_processes, active_processes);
 
 
-/*
-    int idx, count = 0;
+    int clock = 0;
     while(1){
-        if(!empty(inactive_processes) && !empty(active_processes)){
-            if ((count%2) == 0){
-                move(inactive_processes[idx], active_processes);
+        if(!empty(inactive_processes)){
+            if ((clock%2) == 0){
+                move(inactive_processes, active_processes); //move every 2 clock cycles
             }
-            execute(active_processes);
-            check_done(active_processes);
-            idx = ((idx+1)%10); //max size of 10
         }
-        else{
+        if(!empty(active_processes)){
+            LOG("Info", "Executing instruction");
+            execute(active_processes, inactive_processes);
+        }
+
+        if(empty(inactive_processes) && empty(active_processes)){
             break;
         }
+        else{
+            clock++;
+            printf("################### Running #########################\n");
+            print_queues(inactive_processes, active_processes);
+            sleep(1);
+        }
     }
-*/
+    printf("Success!!");
+
     //TO DO:
     // write empty, start, check_done, and check_timeout functions
 
