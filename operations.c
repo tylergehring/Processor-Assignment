@@ -3,8 +3,6 @@
 
 #include "operations.h"
 
-int MAX_LINES = 10; //max number of lines in a file.
-int MAX_TOKEN_SIZE = 10; //max size of chars per token in file
 
 
 
@@ -35,7 +33,7 @@ struct Process** create_process(char filename[]){
     /*creates an array that points to process structs. populates those structs by reading in data*/
     char buffer[200];
     char **tokens;
-    struct Process** processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_LINES);
+    struct Process** processes = (struct Process**)malloc(sizeof(struct Process*) * MAX_PROCESSES);
     if(processes == NULL){
         LOG("ERROR", "Could not allocate memory for struct Processes");
         exit(1);
@@ -139,4 +137,10 @@ int to_number(char *str) {
 
 int is_digit(char ch) {
     return (ch >= '0' && ch <= '9');
+}
+
+void set_null(struct Process** queue){
+    for(int i = 0; i<MAX_PROCESSES; i++){
+        queue[i] = NULL;
+    }
 }
