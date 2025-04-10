@@ -50,29 +50,19 @@ int main(){
             sleep(1);
         }
     }
+    
     printf("Success!!");
 
     //TO DO:
     // write empty, start, check_done, and check_timeout functions
 
     
-
-
     /*
-    printf("process Entry Time: %d\n", processes[0]->entry);
-    printf("Process id: %d\n", processes[0]->id);
-    printf("Process instructions: %d\n\n", processes[0]->instructions);
-
-    printf("process Entry Time: %d\n", processes[1]->entry);
-    printf("Process id: %d\n", processes[1]->id);
-    printf("Process instructions: %d\n\n", processes[1]->instructions);
-
-    printf("process Entry Time: %d\n", processes[2]->entry);
-    printf("Process id: %d\n", processes[2]->id);
-    printf("Process instructions: %d\n\n", processes[2]->instructions);
+    move(inactive_processes, active_processes);
+    move(inactive_processes, active_processes);
+    
+    printf("##########################\n");
+    print_queues(inactive_processes, active_processes);
     */
-    //struct Process** p2 = create_process("test3.txt");
-    //struct Process** p3 = create_process("test2.txt");
-
 
 }
