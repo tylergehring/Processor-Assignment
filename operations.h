@@ -7,7 +7,7 @@ struct Process {
     unsigned int entry;
     unsigned int id;
     unsigned int instructions;
-    unsigned int start;
+    int start;
     unsigned int end;
 };
 
@@ -20,4 +20,6 @@ void copy_str(char* destination, char *source);
 int to_number(char *str);
 int is_digit(char ch);
 void set_null(struct Process** queue);
+int increment_clock(int num);
+
 

@@ -52,6 +52,8 @@ void create_process(struct Process** processes, char filename[]){
         process->entry = to_number(tokens[0]);
         process->id = to_number(tokens[1]);
         process->instructions = to_number(tokens[2]);
+        process->start = -1; //shows we don't have a value yet
+        process->end = 0; //will be overwritten
         processes[num_lines] = process;
         num_lines++;
         LOG("Info", "Created Process");
@@ -138,4 +140,11 @@ void set_null(struct Process** queue){
     for(int i = 0; i<MAX_PROCESSES; i++){
         queue[i] = NULL;
     }
+}
+
+int increment_clock(int num){
+    /*static var clock. returns clock. set num 0 if want clock val*/
+    static unsigned int clock = 0;
+    clock+=num;
+    return clock;
 }
