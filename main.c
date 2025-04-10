@@ -23,7 +23,7 @@ int main(){
         printf("<ERROR IN QUEUE MEM ALLOCATION>\n");
         exit(1);
     }
-    create_process(inactive_processes, "test2.txt");
+    create_process(inactive_processes, "test3.txt");
     LOG("Info", "Queues Initialized");
     
     printf("################### Initial #########################\n");
@@ -33,7 +33,7 @@ int main(){
     while(1){
         if(!empty(inactive_processes)){
             if ((clock%2) == 0){
-                move(inactive_processes, active_processes); //move every 2 clock cycles
+                check_move(inactive_processes, active_processes, clock); //move every 2 clock cycles
             }
         }
         if(!empty(active_processes)){

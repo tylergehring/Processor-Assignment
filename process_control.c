@@ -3,13 +3,17 @@
 #include "process_control.h"
 #include "operations.h"
 
-void move(struct Process** source_queue, struct Process** destination_queue){
-    /*moves a process from inactive to active array. Both arrays are designed to act as queues*/
-    int source_idx = find_front_queue(source_queue);
+void move(struct Process** process, struct Process** destination_queue){
+    /*moves a process from inactive to active array. 
+    Both arrays are designed to act as queues
+    ARGS: pass reference to process pointer and pointer to array of pointers 
+            Ex: move(&process[0], destination)
+    */
+    
     int dest_idx = find_back_queue(destination_queue);
-    destination_queue[dest_idx] = source_queue[source_idx];
-    source_queue[source_idx] = NULL;
-    write_clock_time(destination_queue);
+    destination_queue[dest_idx] = *process;
+    write_clock_time(*process);
+    *process = NULL;
     LOG("Info", "Process Moved To destination Queue");
 }
 
@@ -63,6 +67,7 @@ void execute(struct Process** active_processes, struct Process** inactive_proces
 
     active_processes[queue_idx]->instructions--;
     if(done(active_processes[queue_idx])){
+        write_clock_time(active_processes[queue_idx]);
         int final_idx = find_back_queue(final_processes);
         final_processes[final_idx] = active_processes[queue_idx];
         active_processes[queue_idx] = NULL;
@@ -70,7 +75,7 @@ void execute(struct Process** active_processes, struct Process** inactive_proces
         executions = 0;
     }
     else if (executions > 4){
-        move(active_processes, inactive_processes);
+        move(&active_processes[queue_idx], inactive_processes);
         executions = 0;
     }
     else{
@@ -115,20 +120,15 @@ int find_back_queue(struct Process** queue){
     return 0;
 }
 
-void write_clock_time(struct Process** queue){
-    /*called in move function. if entry time exists, write/overwrite exit time. if not the write entry time*/
-    int idx = (find_back_queue(queue)-1);
-    if(queue[idx]!=NULL){
-        if(queue[idx]->start == -1){
-            queue[idx]->start = increment_clock(0);
-        }
-        else{
-            queue[idx]->end = increment_clock(0);
-        }
+void write_clock_time(struct Process* process){
+    /*if start time exists, write/overwrite exit time. if not the write start time*/
+    if(process->start == -1){
+        process->start = increment_clock(0);
     }
     else{
-        printf("ERROR!!");
-}
+        process->end = increment_clock(0);
+    }
+   
 }
 
 
@@ -150,5 +150,22 @@ void print_final_queues(struct Process** final_processes){
     }
 }
 
+void check_move(struct Process** inactive_processes, struct Process** active_processes, int clock){
+    /*checks entry field in struct. if matches clock, move the process to active*/
+    int i = 0;
+    while(i<MAX_PROCESSES){
+        if(inactive_processes[i]){
+            if(inactive_processes[i]->entry <= clock){
+                move(&inactive_processes[i], active_processes);
+                break;
+            }
+        }
+        i++;
+    }
+}
+
 //TO DO:
 // 1. write entry
+// make move function except a process* as the source and move that to the process** dest
+// idx is specified this way allowing us to create a check_move() function
+// that we can then check the inactive queue for processes with entry times.
