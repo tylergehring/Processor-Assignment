@@ -1,10 +1,14 @@
+/*
+Tyler Gehring
+CS240 Operating Systems
+Bruce Bolden
+4.11.24
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "operations.h"
-
-
-
 
 
 int initialize_log(){

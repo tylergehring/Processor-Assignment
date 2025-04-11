@@ -1,3 +1,10 @@
+/*
+Tyler Gehring
+CS240 Operating Systems
+Bruce Bolden
+4.11.24
+*/
+
 #pragma once
 
 #include "operations.h"

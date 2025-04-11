@@ -1,0 +1,711 @@
+################### Initial #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 100 | Instructions: 3 | Entry:0
+[1] ID: 101 | Instructions: 2 | Entry:1
+[2] ID: 107 | Instructions: 23 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[1] ID: 101 | Instructions: 2 | Entry:1
+[2] ID: 107 | Instructions: 23 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 100 | Instructions: 2 | Entry:0
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[1] ID: 101 | Instructions: 2 | Entry:1
+[2] ID: 107 | Instructions: 23 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 100 | Instructions: 1 | Entry:0
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 23 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[1] ID: 101 | Instructions: 2 | Entry:1
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 23 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[1] ID: 101 | Instructions: 1 | Entry:1
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 23 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 22 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 21 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 20 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 19 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 5 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[2] ID: 107 | Instructions: 18 | Entry:2
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 17 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 27 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 17 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 26 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 25 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 24 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 23 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[3] ID: 113 | Instructions: 22 | Entry:2
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 113 | Instructions: 21 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 7 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 113 | Instructions: 21 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 6 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 5 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 4 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 3 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[4] ID: 123 | Instructions: 2 | Entry:5
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 123 | Instructions: 1 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 5 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 123 | Instructions: 1 | Entry:5
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 4 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 3 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 2 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[5] ID: 127 | Instructions: 1 | Entry:5
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 17 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 16 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 15 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 14 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 13 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[6] ID: 107 | Instructions: 12 | Entry:2
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 11 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 21 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 20 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 19 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 18 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 17 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[7] ID: 113 | Instructions: 16 | Entry:2
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 113 | Instructions: 15 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[8] ID: 123 | Instructions: 1 | Entry:5
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 11 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 10 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 9 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 8 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 7 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[9] ID: 107 | Instructions: 6 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 5 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 5 | Entry:2
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 4 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 3 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 2 | Entry:2
+################### Running #########################
+--------------------
+INACTIVE QUEUE:
+--------------------
+
+
+--------------------
+ACTIVE QUEUE:
+--------------------
+
+[0] ID: 107 | Instructions: 1 | Entry:2
+--------------------
+Final Processes:
+--------------------
+
+[0] ID: 100 | Instructions: 0 | Entry: 0 | Start: 0 | End: 2
+[1] ID: 101 | Instructions: 0 | Entry: 1 | Start: 2 | End: 4
+[2] ID: 127 | Instructions: 0 | Entry: 5 | Start: 10 | End: 27
+[3] ID: 123 | Instructions: 0 | Entry: 5 | Start: 8 | End: 40
+[4] ID: 107 | Instructions: 0 | Entry: 2 | Start: 4 | End: 51
+

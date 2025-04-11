@@ -1,3 +1,10 @@
+/*
+Tyler Gehring
+CS240 Operating Systems
+Bruce Bolden
+4.11.24
+*/
+
 #pragma once
 
 #define MAX_PROCESSES 10 //max number of processes in a file.

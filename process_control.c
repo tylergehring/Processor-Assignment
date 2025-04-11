@@ -1,3 +1,10 @@
+/*
+Tyler Gehring
+CS240 Operating Systems
+Bruce Bolden
+4.11.24
+*/
+
 #include <stdio.h>
 
 #include "process_control.h"
@@ -19,7 +26,6 @@ void move(struct Process** process, struct Process** destination_queue){
 
 void print_queues(struct Process** inactive_processes, struct Process** active_processes){
     /*print the contents of each queue by process id and instructions left.*/
-    LOG("Info", "Printing Queues");
     printf("--------------------\n");
     printf("INACTIVE QUEUE:\n");
     printf("--------------------\n\n");
@@ -163,9 +169,3 @@ void check_move(struct Process** inactive_processes, struct Process** active_pro
         i++;
     }
 }
-
-//TO DO:
-// 1. write entry
-// make move function except a process* as the source and move that to the process** dest
-// idx is specified this way allowing us to create a check_move() function
-// that we can then check the inactive queue for processes with entry times.

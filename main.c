@@ -1,3 +1,9 @@
+/*
+Tyler Gehring
+CS240 Operating Systems
+Bruce Bolden
+4.11.24
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h> //for sleep()
@@ -53,17 +59,5 @@ int main(){
     }
     
     print_final_queues(final_processes);
-
-    //TO DO:
-    // write empty, start, check_done, and check_timeout functions
-
-    
-    /*
-    move(inactive_processes, active_processes);
-    move(inactive_processes, active_processes);
-    
-    printf("##########################\n");
-    print_queues(inactive_processes, active_processes);
-    */
 
 }
